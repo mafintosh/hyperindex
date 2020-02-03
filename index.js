@@ -45,7 +45,7 @@ class HyperIndex {
     })
   }
 
-  remove (key, options, cb) {
+  remove (key, opts, cb) {
     const self = this
 
     this.lock(function (release) {
@@ -53,13 +53,13 @@ class HyperIndex {
         if (err) return release(cb, err)
 
         const batch = [
-          { type: 'del', key: 'values/' + id }
+          { type: 'del', key: 'values/' + key }
         ]
 
         for (const keyword of (opts.keywords || [])) {
           batch.push({
             type: 'del',
-            key: 'index/' + keyword + '/' + id
+            key: 'index/' + keyword + '/' + key
           })
         }
 

@@ -7,7 +7,7 @@ tape('a bunch of searches', function (t) {
 
   const idx = new HyperIndex(ram, { valueEncoding: 'json' })
 
-  let cnt = 100
+  const cnt = 100
   loop(0)
 
   function loop (i) {
@@ -40,4 +40,3 @@ function unique () {
     return true
   }
 }
-

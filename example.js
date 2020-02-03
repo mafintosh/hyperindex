@@ -18,11 +18,9 @@ idx.add({
 idx.add({
   title: 'cool stuff'
 }, {
-  keywords: [ 'stuff' ]
-}, function (err) {
-
+  keywords: ['stuff']
+}, function () {
   HyperIndex.or(idx.lookup('test'), idx.lookup('testing'))
     .on('data', console.log)
     .on('end', () => console.log('done!'))
 })
-
