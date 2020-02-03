@@ -9,7 +9,11 @@
     "sorted-union-stream": "^3.0.1"
   },
   "devDependencies": {
+    "standard": "^14.3.1",
     "tape": "^4.13.0"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
   },
   "repository": {
     "type": "git",
