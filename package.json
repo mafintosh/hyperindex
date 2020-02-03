@@ -1,6 +1,6 @@
 {
   "name": "hyperindex",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A keyword based search index built on Hypertrie",
   "main": "index.js",
   "dependencies": {
