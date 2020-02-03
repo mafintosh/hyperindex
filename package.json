@@ -1,0 +1,24 @@
+{
+  "name": "hyperindex",
+  "version": "0.0.0",
+  "description": "A keyword based search index built on Hypertrie",
+  "main": "index.js",
+  "dependencies": {
+    "hypertrie": "^4.2.3",
+    "sorted-intersect-stream": "^3.0.0",
+    "sorted-union-stream": "^3.0.1"
+  },
+  "devDependencies": {
+    "tape": "^4.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafintosh/hyperindex.git"
+  },
+  "author": "Mathias Buus (@mafintosh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mafintosh/hyperindex/issues"
+  },
+  "homepage": "https://github.com/mafintosh/hyperindex"
+}
