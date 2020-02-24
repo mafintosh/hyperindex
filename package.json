@@ -5,10 +5,12 @@
   "main": "index.js",
   "dependencies": {
     "hypertrie": "^4.2.3",
+    "pump": "^3.0.0",
     "sorted-intersect-stream": "^3.0.0",
     "sorted-union-stream": "^3.0.1"
   },
   "devDependencies": {
+    "random-access-memory": "^3.1.1",
     "standard": "^14.3.1",
     "tape": "^4.13.0"
   },
